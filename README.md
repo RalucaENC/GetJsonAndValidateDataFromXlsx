@@ -46,7 +46,6 @@ This file also includes a nested class for mapping columns to fields and a prope
 
 This file contains a class that defines custom translations for error messages used in the custom action plugin.
 It includes a dictionary that maps translation types to translated error messages for multiple languages.
-The supported languages are English, French, Spanish, German, Simplified Chinese, Japanese, Russian, Portuguese, Italian, Dutch, Hindi, and Arabic.
 
 ### 4. ExcelExtensions.cs
 
