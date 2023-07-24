@@ -1,6 +1,6 @@
 # GIT README
 
-This repository contains several files related to the functionality of a custom action plugin in WebCon Workflow. Each file serves a specific purpose and contributes to the overall functionality of the plugin.
+This repository contains several files related to the functionality of a custom action plugin in WebCon BPS. Each file serves a specific purpose and contributes to the overall functionality of the plugin.
 
 ## Files Description
 
@@ -62,9 +62,9 @@ The class supports multithreading for faster data processing.
 
 ## Usage
 
-To use this custom action plugin in WebCon Workflow, follow these steps:
+To use this custom action plugin in WebCon BPS, follow these steps:
 
 1. Compile and Publish the project and generate the plugin archive (.zip) file.
-2. Import the archive file into the WebCon Workflow Designer.
+2. Import the archive file into the WebCon Workflow Designer Studio.
 3. Add the custom action to your workflow.
 4. Configure the custom action by providing the necessary settings and mappings.
