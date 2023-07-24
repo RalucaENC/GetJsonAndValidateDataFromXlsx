@@ -2,7 +2,7 @@
   {
     //"Guid": "52860fbf-81b2-4d3f-8fd0-5b6ab33e60ad",
     "Guid": "2b853edb-9aec-4ee1-a392-b4574ed456c9",
-    "Name": "Sample standard action",
+    "Name": "Get JSON and validate data from Excel file",
     "Description": "",
     "Assembly": "GetJsonAndValidateDataFromXlsx",
     "Class": "GetJsonAndValidateDataFromXlsx.CustomAction1",
