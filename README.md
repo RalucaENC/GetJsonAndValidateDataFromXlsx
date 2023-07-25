@@ -2,6 +2,24 @@
 
 This repository contains several files related to the functionality of a custom action plugin in WebCon BPS. Each file serves a specific purpose and contributes to the overall functionality of the plugin.
 
+## Excel to JSON Plugin: Functionality Breakdown
+
+Our Excel to JSON Plugin is a quite useful tool designed to streamline and optimize the process of transforming data from Excel spreadsheets into the universally-compatible JSON format. The plugin is implemented with a variety of functionalities to ensure a seamless Extraction, Transformation, and Loading (ETL) process. Below is a comprehensive, technical overview of its features:
+
+### 1.File Selection: This module provides an interface to choose the target Excel file for data extraction by providing the Attachment ID. It allows the user to specify the sheet and row number to begin from. If not explicitly provided, the process starts from the first cell of the first sheet, indexing from zero.
+
+### 2.Unique Data Identification: Leveraging hash-based or sorting techniques, this feature identifies unique data elements within a high volume of data, thereby optimizing the storage and preventing redundancy in the database.
+
+### 3.Data Validation: This function serves as a data integrity checker, designed to maintain the consistency and accuracy of the data. It detects any duplicate identifiers and flags any values that deviate from the predefined rules. The validation rules can be customized according to user requirements.
+
+### 4.Data Transformation and Output: Post-extraction and validation, the data is transformed from Excel format into the JSON format using a serialization process. JSON, being a lightweight data-interchange format, is easy for humans to read and write and easy for machines to parse and generate. Post-transformation, the plugin provides various output formats, such as a comprehensive JSON containing all data rows, a JSON consisting of unique rows, one with duplicate rows, and another with the errors encountered during the process.
+
+### 5.Field Mapping: This functionality links Excel columns with specific properties in the JSON output. The mapping follows a user-defined schema that correlates a particular column in Excel with a respective property in the JSON structure. This ensures accurate data placement and structured JSON output.
+
+### 6.Processing Settings: The plugin employs a multi-threaded processing strategy for handling large Excel files. This concurrent approach allows for simultaneous processing of various segments of the file, effectively optimizing the processing speed and resource usage.
+
+### 7.Error Management: This module is designed to handle critical errors that might occur during the Excel data processing. Users can configure the plugin to either halt the entire operation upon encountering an error or continue the processing while logging the error for post-processing review. This flexible error management ensures robust operation and minimizes data loss or corruption.
+
 ## Files Description
 
 ### 1. CustomAction1.cs
@@ -67,6 +85,8 @@ To use this custom action plugin in WebCon BPS, follow these steps:
 2. Import the archive file into the WebCon Workflow Designer Studio.
 3. Add the custom action to your workflow.
 4. Configure the custom action by providing the necessary settings and mappings.
+
+For a deeper understanding and more comprehensive details of each functionality, we encourage you to explore the dedicated description of each parameter within the plugin. This will provide you with valuable insights into the operation and customization options, enabling you to maximize the utility of the Excel to JSON Plugin for your specific use-cases.
 
    ![image](https://github.com/RalucaENC/GetJsonAndValidateDataFromXlsx/assets/140409176/dc169551-7cc7-4ad0-858a-905947c564a2)
 
