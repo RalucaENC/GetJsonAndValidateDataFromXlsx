@@ -20,8 +20,24 @@ namespace GetJsonAndValidateDataFromXlsx
 
         //do not use empty strings for language acronym, reserved value
         public static Dictionary<string, Dictionary<TranslationType, string>> TranslatesDictionary = new Dictionary<string, Dictionary<TranslationType, string>>
-        {
-            // Continue with data for English
+        {   
+
+            {
+                "ro" , new Dictionary<TranslationType, string>
+                {
+                    { TranslationType.AttachmentNotFound, "Atașamentul nu a fost găsit!" },
+                    { TranslationType.WrongAttachmentExtension, "Extensie de fișier greșită! Plugin-ul funcționează numai cu fișiere .xlsx și .xls!" },
+                    { TranslationType.NumericFormatValidation, "Linia {0}, Coloana {1} -> Format numeric invalid" },
+                    { TranslationType.MaxLengthValidation, "Linia {0}, Coloana {1} -> Valoarea depășește lungimea maximă permisă ({2})" },
+                    { TranslationType.RequiredColumnValidation, "Linia {0}, Coloana {1} -> Lipsă valoare în celula obligatorie" },
+                    { TranslationType.ExcludedValuesValidation, "Linia {0}, Coloana {1}, {2} -> Valoarea nu este permisă conform configurației" },
+                    { TranslationType.IncludeDictionaryValidation, "Linia {0}, Coloana {1}, {2} -> Valoarea nu a fost găsită în sistem" },
+                    { TranslationType.UniqueKeyValidation, "Linia {0} -> Cheia unică ({1}) este duplicată în fișierul încărcat, găsită anterior la linia: {2}" }
+                }
+
+            },
+
+            // Data for English
             {
                 "en", new Dictionary<TranslationType, string>
                 {
@@ -36,7 +52,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for French
+            // Data for French
             {
                 "fr", new Dictionary<TranslationType, string>
                 {
@@ -51,7 +67,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Spanish
+            // Data for Spanish
             {
                 "es", new Dictionary<TranslationType, string>
                 {
@@ -66,7 +82,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for German
+            // Data for German
             {
                 "de", new Dictionary<TranslationType, string>
                 {
@@ -81,7 +97,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Simplified Chinese
+            // Data for Simplified Chinese
             {
                 "zh", new Dictionary<TranslationType, string>
                 {
@@ -96,7 +112,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Japanese
+            // Data for Japanese
             {
                 "ja", new Dictionary<TranslationType, string>
                 {
@@ -111,7 +127,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Russian
+            // Data for Russian
             {
                 "ru", new Dictionary<TranslationType, string>
                 {
@@ -126,7 +142,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Portuguese
+            // Data for Portuguese
             {
                 "pt", new Dictionary<TranslationType, string>
                 {
@@ -141,7 +157,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Italian
+            // Data for Italian
             {
                 "it", new Dictionary<TranslationType, string>
                 {
@@ -156,7 +172,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Dutch
+            // Data for Dutch
             {
                 "nl", new Dictionary<TranslationType, string>
                 {
@@ -171,7 +187,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Hindi
+            // Data for Hindi
             {
                 "hi", new Dictionary<TranslationType, string>
                 {
@@ -186,7 +202,7 @@ namespace GetJsonAndValidateDataFromXlsx
                 }
             },
 
-            // Continue with data for Arabic
+            // Data for Arabic
             {
                 "ar", new Dictionary<TranslationType, string>
                 {

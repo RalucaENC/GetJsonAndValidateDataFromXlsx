@@ -17,10 +17,6 @@ namespace GetJsonAndValidateDataFromXlsx
     // Internal class ReadExcel
     internal class ReadExcel
     {
-        // Constants declaration
-        private const int DEFAULT_THREADS = 4;
-        private const string INDEX = "_INDEX_";
-
         // Private fields of the class
         private ISheet sheet;
         private Dictionary<string, Dictionary<string, string>> mapAp;
