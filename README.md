@@ -67,3 +67,6 @@ To use this custom action plugin in WebCon BPS, follow these steps:
 2. Import the archive file into the WebCon Workflow Designer Studio.
 3. Add the custom action to your workflow.
 4. Configure the custom action by providing the necessary settings and mappings.
+
+   ![image](https://github.com/RalucaENC/GetJsonAndValidateDataFromXlsx/assets/140409176/dc169551-7cc7-4ad0-858a-905947c564a2)
+
